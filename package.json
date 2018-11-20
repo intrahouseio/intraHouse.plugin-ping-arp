@@ -1,0 +1,12 @@
+{
+  "name": "pingarp",
+  "version": "0.2.6",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deg026",
+  "license": "ISC"
+}

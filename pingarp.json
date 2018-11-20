@@ -1,0 +1,31 @@
+{
+  "id": "pingarp",
+  "description": "Ping by Arp (MAC)",
+  "gendevices": 0,
+  "single":0,
+  "service": 0,
+  "restartOnChannelsChange":1,
+  "module": "index.js",
+  "params": [],
+  "chpattern": [
+    { "name": "ip", "note": "$Ip", "type": "string"},
+    { "name": "mac", "note": "$Mac", "type": "string"},
+    { "name": "timewait", "note": "$Timewait", "type": "number"},
+    { "name": "interval", "note": "$Interval", "type": "number"}
+  ],
+  "chdefault": {
+    "chan": "pingarp_x",
+    "desc": "pingarp",
+    "ip": "127.0.0.1",
+    "mac": "any",
+    "interval": 30,
+    "timewait": 120,
+    "dn":""
+  },
+  "genrules": {
+    "pingarp": {
+      "cl": "SensorD"
+    }
+  },
+  "commands": []
+}
